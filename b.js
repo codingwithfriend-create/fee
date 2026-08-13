@@ -24,3 +24,16 @@ newSection3.style.color = "white";
 newSection3.style.backgroundColor = "seaGreen";
 newSection3.style.width = "31rem";
 newSection3.style.height = "3rem";
+
+var firstElement = document.body.firstElementChild;
+firstElement.style.fontSize = "1.5rem";
+console.log(firstElement);
+let lastElement = document.body.lastElementChild;
+lastElement.style.fontSize = "1.5rem";
+console.log(lastElement);
+let middleElement = lastElement.previousElementSibling;
+middleElement.style.fontSize = "2rem";
+var firstElement = document.getElementById("a");
+var firstElement=document.querySelector("#a");
+var array=document.querySelectorAll("section")
+array[2].style.width="20rem";

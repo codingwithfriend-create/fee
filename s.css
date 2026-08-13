@@ -1,0 +1,48 @@
+/* Remove default margin */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Smooth scrolling */
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+}
+
+/* Common style for every section */
+.section{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:2rem;
+}
+
+/* Different background colors */
+.one{
+    background:#3498db;
+}
+
+.two{
+    background:#2ecc71;
+}
+
+.three{
+    background:#e67e22;
+}
+
+.four{
+    background:#9b59b6;
+}
+
+p{
+    font-size:1.2rem;
+    margin-top:10px;
+}

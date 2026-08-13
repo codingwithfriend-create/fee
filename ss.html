@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout Design</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        background: url('https://images.unsplash.com/photo-1505761671935-60b3a7427bad') no-repeat center/cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    /* Glass effect */
+    .glass {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: white;
+        padding: 20px;
+    }
+
+    /* Top box */
+    .top-box {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+
+    /* Bottom container */
+    .bottom-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .card {
+        flex: 1;
+        height: 120px;
+        text-align: center;
+    }
+
+</style>
+</head>
+
+<body>
+
+    <!-- Top Box -->
+    <div class="glass top-box">
+        <h2>Box1</h2>
+    </div>
+
+    <!-- Bottom Boxes -->
+    <div class="bottom-container">
+        <div class="glass card">Box1</div>
+        <div class="glass card">Box2</div>
+        <div class="glass card">Box3</div>
+    </div>
+
+</body>
+</html>
